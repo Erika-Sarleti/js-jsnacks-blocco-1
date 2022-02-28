@@ -61,25 +61,22 @@ if (userNum % 2 == 0){
 */
 
 // ********** JSNACK 2.3 **********
-
-
-
-
 /*
-- genera array con nomi 
-- genera array con cognomi
-- prendi le liste 3 volte
-- genera un array con le identità false
-- genera una variabile che da un numero casuale
-- di ad ogni array di scegliere la posizione della variabile casuale
-- aggiungere gli elementi all'array delle identità
-- copiare l'array delle identità nella pagina
+let nameList = ['Claudio', 'Ernesto', 'Lucia', 'Francesca', 'Leonardo', 'Martina', 'Federico', 'Roberta'];
+
+let lastNameList = ['Rossi', 'Beccardi', 'Tomassini', 'Bianchi', 'Tascioni', 'Martelluzzo', 'Ruspante', 'Ornamenti', 'Di Michele'];
 
 
+let arrFakeId = [];
 
+for (i = 0; i < 3; i++){
+    let random1 = Math.floor(Math.random() * 8);
+    let random2 = Math.floor(Math.random() * 9);
+    let fakeId = lastNameList[random2] + " " + nameList[random1];
+    console.log(fakeId)
+    arrFakeId.push(fakeId);
+}
+
+document.write(arrFakeId);
 
 */
-//                   0        1       2        3         4        5          6        7
-const nameList = [Claudio, Ernesto, Lucia, Francesca, Leonardo, Martina, Federico, Roberta]
-//                      0      1          2         3         4          5           6         7
-const lastNameList = [Rossi, Beccardi, Tomassini, Bianchi, Tascioni, Martelluzzo, Ruspante, Ornamenti]
